@@ -36,22 +36,46 @@ h1{
     font-size: 4.38rem;
     line-height: 4.38rem;
 }
+h2{
+    font-size: 42px;
+    line-height: 46px;
+}
+h3, h4{
+    font-size: 22px;
+    line-height: 26px;
+}
+h4{
+    font-weight: 700;
+    color: var(--heading-primary);
+}
 input:focus,
 .form-control:focus{
     outline: none;
     border: 1px solid #D8E0E2;
     box-shadow: none;
 }
-.lc-btn-style{
-    background-color: var(--bg-primary);
+.lc-btn-style, .lc-btn-white{
     border-radius: 8px;
-    color: #fff;
     padding: 12px 24px;
     border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+.lc-btn-style{
+    background-color: var(--bg-primary);
+    color: #fff;
 }
 .lc-btn-style:hover{
     background-color: var(--bg-primary);
     color: #fff;
+}
+.lc-btn-white:hover{
+    background-color: transparent;
+    color: var(--heading-primary);
+}
+.sec-bottom{
+    margin-bottom: 150px;
 }
 /*============================= 
     Header Section
@@ -92,13 +116,16 @@ input:focus,
     border-radius: 100px;
     cursor: pointer;
 }
+.lc-header-btn{
+    font-size: 16px;
+    line-height: 28px;
+}
 /*============================= 
     Hero Section
 ===============================*/
-.ls-hero-sec-area{
+.lc-hero-sec-area{
     background: linear-gradient(180deg, #02B5EA 0%, rgba(2, 181, 234, 0.15) 100%);
     padding-top: 20px;
-    margin-bottom: 150px;
 }
 .hero-texts h1{
     margin-bottom: 20px;
@@ -109,4 +136,32 @@ input:focus,
     color: var(--heading-primary);
     margin-bottom: 40px;
     padding-right: 50px;
+}
+/*============================= 
+    Featured Section
+===============================*/
+.lc-row-gap{
+    margin-bottom: 70px;
+}
+.lc-features-heading{
+    padding-right: 30px;
+}
+.lc-featured-img{
+    bottom: -165px;
+}
+.star-rating .fa-star {
+    font-size: 18px;
+    margin-right: 6px;
+    color: #fbb616;
+    margin: 12px 6px 12px 0px;
+}
+.featured-product-details p{
+    margin-bottom: 10px;
+}
+.featured-product-details h4{
+    margin-bottom: 18px;
+}
+.featured-product-details .desc{
+    padding-right: 135px;
+    margin-bottom: 38px;
 }
