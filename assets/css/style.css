@@ -1,0 +1,112 @@
+/*============================= 
+    Google Font and Utilities
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Manrope:wght@400;600;700&display=swap');
+:root{
+    --bg-primary: #182327;
+    --txt-primary: #5D696D;
+    --heading-primary: #182327;
+}
+/* Custom Font */
+@font-face{
+    font-family: "Sentient";
+    src: url("../font/sentient-regular-webfont.woff") format("woff");
+    src: url("../font/sentient-medium-webfont.woff") format("woff");
+    src: url("../font/sentient-bold-webfont.woff") format("woff");
+}
+*,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: var(--txt-primary);
+}
+h1, h2, h3{
+    font-family: 'Sentient', sans-serif;
+    font-weight: bold;
+    color: var(--heading-primary);
+}
+h1{
+    font-size: 4.38rem;
+    line-height: 4.38rem;
+}
+input:focus,
+.form-control:focus{
+    outline: none;
+    border: 1px solid #D8E0E2;
+    box-shadow: none;
+}
+.lc-btn-style{
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+}
+.lc-btn-style:hover{
+    background-color: var(--bg-primary);
+    color: #fff;
+}
+/*============================= 
+    Header Section
+===============================*/
+.lc-header-area{
+    padding: 1.375rem 0px;
+}
+.lc-mr{
+    margin-right: 42px;
+}
+.search{
+    position: relative;
+    width: 330px;
+    margin-right: 22px;
+}
+.search input{
+    height: 52px;
+    text-indent: 35px;
+    border: 1px solid #D8E0E2;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.search .fa-search{
+    position: absolute;
+    top: 16px;
+    font-size: 1.2rem;
+    left: 16px;
+}
+.ps .fa-user{
+    width: 52px;
+    height: 52px;
+    background-color: var(--bg-primary);
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    margin-right: 22px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+/*============================= 
+    Hero Section
+===============================*/
+.ls-hero-sec-area{
+    background: linear-gradient(180deg, #02B5EA 0%, rgba(2, 181, 234, 0.15) 100%);
+    padding-top: 20px;
+    margin-bottom: 150px;
+}
+.hero-texts h1{
+    margin-bottom: 20px;
+}
+.hero-texts p{
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--heading-primary);
+    margin-bottom: 40px;
+    padding-right: 50px;
+}
